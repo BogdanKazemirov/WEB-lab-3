@@ -1,0 +1,44 @@
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.block-content{
+    position: absolute;
+}
+.inp:focus ~ .block-content {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    animation-name: pole;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+.inp{
+    position: absolute;
+    top: 70px;
+}
+
+@keyframes pole {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 250px;
+    }
+
+}
+input {
+    width: 500px;
+}
